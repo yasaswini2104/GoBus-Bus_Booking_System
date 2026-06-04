@@ -50,10 +50,16 @@ public class NotificationServiceImpl implements NotificationService {
 
         sendEmail(
                 email,
-                "Booking Confirmation",
-                "Your booking has been confirmed.\n\n"
-                        + "Booking Reference: "
-                        + bookingReference
+                "Your GoBus Booking Has Been Confirmed",
+                "Dear " + user.getFullName() + ",\n\n" +
+                "Your booking has been successfully confirmed.\n\n" +
+                "Booking Details:\n" +
+                "Booking Reference: " + bookingReference + "\n\n" +
+                "Please retain this reference number for check-in and future correspondence.\n\n" +
+                "If you have any questions or require assistance, please contact our support team.\n\n" +
+                "Thank you for choosing GoBus.\n\n" +
+                "Kind Regards,\n" +
+                "GoBus Customer Support"
         );
 
         log.info(
