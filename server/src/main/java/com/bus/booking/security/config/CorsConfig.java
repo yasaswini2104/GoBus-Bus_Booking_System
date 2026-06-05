@@ -21,7 +21,7 @@ public class CorsConfig {
 
         config.setAllowedOrigins(
                 List.of("http://localhost:5173",
-                "https://go-bus-bus-booking-system-git-main-yashus-projects-993d8019.vercel.app/"
+                "https://go-bus-bus-booking-system.vercel.app/"
                         )
         );
 
