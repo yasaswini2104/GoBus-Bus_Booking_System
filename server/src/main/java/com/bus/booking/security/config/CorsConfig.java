@@ -20,8 +20,9 @@ public class CorsConfig {
         config.setAllowCredentials(true);
 
         config.setAllowedOrigins(
-                List.of("http://localhost:5173"),
+                List.of("http://localhost:5173",
                 "https://go-bus-bus-booking-system-git-main-yashus-projects-993d8019.vercel.app/"
+                        )
         );
 
         config.setAllowedHeaders(
